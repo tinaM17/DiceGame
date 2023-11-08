@@ -1,0 +1,226 @@
+body {
+    background-color: palevioletred;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.current1 {
+   background-color: rgb(242, 70, 70);
+   color: white;
+   padding: 10px;
+   font-size: 20px;
+   border-radius: 5px;
+}
+.current2 {
+    background-color: violet;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+ }
+
+
+#newGame {
+    padding: 5px;
+    background-color: blueviolet;
+    border-radius: 5px;
+}
+
+.players {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.player1 {
+    background-color: white;
+    padding: 140px;
+}
+
+.player2 {
+    background-color: pink;
+    padding: 140px;
+}
+
+
+.rollDice {
+    position:absolute;
+    top:320px;
+    left:680px;
+    padding: 9px;
+    font-size: 18px;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.hold {
+    position:absolute;
+    top:380px;
+    left:700px;
+    padding: 9px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+#finalScore {
+    position:absolute;
+    top:420px;
+    left:650px;
+    background-color: chocolate;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+img {
+    position: absolute;
+    top:180px;
+    left: 670px;
+}
+
+.results {
+    text-align: center;
+    position: absolute;
+    top:100px;
+    left: 440px;
+    color: rgb(43, 31, 222);
+    font-size: 20px;
+}
+
+@media  screen and (max-width:1400px) {
+
+.rollDice {
+    left:650px;
+}
+    .hold {
+        left:680px;
+    }
+    img {
+        left: 640px;
+    }
+    #finalScore {
+        left:600px;
+    }
+    .results {
+        left: 340px;
+    }
+}
+
+@media  screen and (max-width:1026px) {
+
+    .rollDice {
+        left:470px;
+    }
+        .hold {
+            left:490px;
+        }
+        img {
+            left: 460px;
+        }
+        #finalScore {
+            left:430px;
+        }
+        .results {
+            left: 250px;
+        }
+    }
+
+    @media  screen and (max-width:774px) {
+
+        .rollDice {
+            top:270px;
+            left:350px;
+        }
+            .hold {
+                top:330px;
+                left:370px;
+            }
+            img {
+                width: 80px;
+                height: 80px;
+                left: 350px;
+            }
+            #finalScore {
+                top:370px;
+                left:340px;
+                padding: 5px;
+                border-radius: 3px;
+                font-size: medium;
+            }
+            .results {
+                left: 150px;
+            }
+            .player1 {
+                background-color: white;
+                padding: 80px;
+                font-size: 16px;
+            }
+            
+            .player2 {
+                background-color: pink;
+                padding: 80px;
+                font-size: 16px;
+            }
+        }
+
+        @media  screen and (max-width:360px) {
+
+            .rollDice {
+                top:230px;
+                left:150px;
+                font-size: small;
+                padding: 3px;
+            }
+                .hold {
+                    top:260px;
+                    left:160px;
+                    font-size: small;
+                }
+                img {
+                    width: 50px;
+                    height: 50px;
+                    top:170px;
+                    left: 160px;
+                }
+                #finalScore {
+                    top:290px;
+                    left:140px;
+                    padding: 3px;
+                    border-radius: 2px;
+                    font-size: small;
+                }
+                .results {
+                    left: 130px;
+                }
+                .player1 {
+                    padding-top: 55px;
+                    padding-bottom: 55px;
+                    padding-left: 25px;
+                    padding-right: 30px;
+                    font-size: 12px;
+                }
+                
+                .player2 {
+                    padding-top: 55px;
+                    padding-bottom: 55px;
+                    padding-left: 35px;
+                    padding-right: 25px;
+                    font-size: 12px;
+                }
+                .current1 {
+                    padding: 5px;
+                    font-size: 12px;
+                    border-radius: 3px;
+                 }
+                 .current2 {
+                     padding: 5px;
+                     font-size: 12px;
+                     border-radius: 3px;
+                  }
+            }
