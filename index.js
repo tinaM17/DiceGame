@@ -5,6 +5,7 @@ const hold=document.querySelector('.hold')
 const results=document.querySelector('.results')
 const h2=document.createElement('h2')
 const newGame=document.querySelector('#newGame')
+let image=document.querySelector('img')
 
 let score1=document.querySelector('.score1')
 let score2=document.querySelector('.score2')
@@ -22,9 +23,12 @@ let currentPlayer="player1"
 let playGame=true
 if(playGame){
     rollDice.addEventListener('click',(e)=>{
+        const audio=new Audio('dice_audio.mp3');
         const randomNumber= Math.floor((Math.random()*6)+1)
-        const image=document.querySelector('img')
+       // const image=document.querySelector('img')
+        audio.play()
         image.src=`./images/dice${randomNumber}.png`
+        image.style.transform="rotate(360deg)";
         if(randomNumber===1){
             if(currentPlayer==="player1"){
                 currentPlayer="player2"
@@ -75,7 +79,7 @@ function calculateScore(currentPlayer,randomNumber) {
 
 function checkWinner(currentPlayer,holdScore) {
     if(holdScore>=100){
-        display(`Congratulations!!! ${currentPlayer} is won the match`)
+        display(`Congratulations!! ${currentPlayer} is won the match`)
         endGame()
     }
 }

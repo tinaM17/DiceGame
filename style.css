@@ -82,6 +82,8 @@ img {
     position: absolute;
     top:180px;
     left: 670px;
+    transition-duration: 0.9s;
+    transition-property: transform;
 }
 
 .results {
@@ -170,39 +172,42 @@ img {
         }
 
         @media  screen and (max-width:360px) {
-
+            body {
+                height:100vh;
+            }
             .rollDice {
-                top:230px;
+                top:225px;
                 left:150px;
                 font-size: small;
                 padding: 3px;
             }
                 .hold {
                     top:260px;
-                    left:160px;
-                    font-size: small;
+                    left:155px;
+                    font-size: 10px;
                 }
                 img {
                     width: 50px;
                     height: 50px;
-                    top:170px;
-                    left: 160px;
+                    top:160px;
+                    left: 155px;
                 }
                 #finalScore {
                     top:290px;
-                    left:140px;
+                    left:130px;
                     padding: 3px;
                     border-radius: 2px;
-                    font-size: small;
+                    font-size: 12px;
                 }
                 .results {
-                    left: 130px;
+                    font-size: 10px;
+                    left: 44px;
                 }
                 .player1 {
                     padding-top: 55px;
                     padding-bottom: 55px;
-                    padding-left: 25px;
-                    padding-right: 30px;
+                    padding-left: 30px;
+                    padding-right: 35px;
                     font-size: 12px;
                 }
                 
@@ -210,7 +215,7 @@ img {
                     padding-top: 55px;
                     padding-bottom: 55px;
                     padding-left: 35px;
-                    padding-right: 25px;
+                    padding-right: 35px;
                     font-size: 12px;
                 }
                 .current1 {
